@@ -8,7 +8,7 @@ incomes = [
 
 @app.route('/')
 def welcome():
-    return "Welcome to Cashman!"
+    return "Welcome to Todo Flask!"
 
 @app.route('/incomes')
 def get_incomes():
