@@ -5,6 +5,11 @@ name = "pypi"
 
 [packages]
 flask = "*"
+psycopg = "*"
+mysql-connector-python = "*"
+python-dotenv = "*"
+flask-cors = "*"
+jsonschema = "*"
 
 [dev-packages]
 
