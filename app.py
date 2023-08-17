@@ -3,8 +3,8 @@ from db import db
 from routes import task
 from flask_cors import CORS
 import os
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 FRONTEND_URL = os.environ.get('FRONTEND_URL', 'http://127.0.0.1:5173')
 
