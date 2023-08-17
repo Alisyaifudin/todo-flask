@@ -23,13 +23,13 @@ class GET:
                         tasks.append(tasks_item)
             return {
                 'data': tasks,
-                'error': None
+                'error': False
             }
         except Exception as e:
             print("Exception: ", e)
             return {
-                'data': None,
-                'error': e
+                'data': False,
+                'error': True
             }
         
 class ADD:
@@ -65,13 +65,13 @@ class ADD:
                     print("query: ", query_add)
             return {
                 'data': True,
-                'error': None
+                'error': False
             }
         except Exception as e:
             print("Exception: ", e)
             return {
                 'data': False,
-                'error': e
+                'error': True
             }
         
 class EDIT:
@@ -113,11 +113,11 @@ class EDIT:
                             print("query: ", query_update)
             return {
                 'data': True,
-                'error': None
+                'error': False
             }
         except Exception as e:
             print("Exception: ", e)
             return {
                 'data': False,
-                'error': e
+                'error': True
             }
